@@ -467,8 +467,8 @@ video {
 }
 .cta-footer {
   position: fixed;
-  bottom: 1%;
-  left: 80%;
+  bottom: 8%;
+  left: 83%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,6 +523,7 @@ video {
 }
 .footer-container a {
   text-decoration: underline;
+  padding: 0.5rem;
 }
 
 /* RESPONSIVE INTERMEDIO */
@@ -750,6 +751,9 @@ video {
   .cta-footer {
     padding: 0.5rem 1.3rem;
   }
+  .footer-container a {
+    padding: 0.3rem;
+  }
 }
 
 /* DESKTOP 1200px */
@@ -821,5 +825,8 @@ video {
   }
   .item-servizi {
     font-size: var(--Font-M);
+  }
+  .cta-footer{
+    left: 93%;
   }
 }
