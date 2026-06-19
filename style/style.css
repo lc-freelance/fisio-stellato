@@ -102,6 +102,16 @@ video {
     transform: translateX(0);
   }
 }
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* NAV BAR */
 
@@ -463,8 +473,9 @@ video {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  background-color: var(--Primary);
+  background-color: var(--Secondary);
   border-radius: 15px;
+  animation: slideFromRight 2s ease forwards;
 }
 .cta-footer img {
   width: 40px;
@@ -644,7 +655,7 @@ video {
   }
 
   .cta-footer {
-   left: 90%;
+    left: 90%;
   }
 
   /* FOOTER */
@@ -733,7 +744,10 @@ video {
   .list-social ul {
     gap: 2rem;
   }
-  .cta-footer{
+
+  /* Pulsante what */
+
+  .cta-footer {
     padding: 0.5rem 1.3rem;
   }
 }
